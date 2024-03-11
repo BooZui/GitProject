@@ -1,0 +1,22 @@
+table {
+  width: 400px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+h1 {
+  text-align: center;
+}
+
+th, td {
+  border: 2px solid #555;
+}
+
+td {
+  text-align: left;
+  color: #555;
+}
+
+th {
+  background: yellow;
+}
