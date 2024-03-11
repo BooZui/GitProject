@@ -6,17 +6,24 @@
   <title>Sign In</title>
 </head>
 <body>
+  <style>
+    *{
+      font-weight: 600;
+      padding: 4px;
+    }
+  </style>
+
   <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
-    <label for="name">Ho va ten:</label><br>
-    <input type="text" name="name" id="name" placeholder="Name"><br>
+    <label for="name">Họ và tên</label><br>
+    <input type="text" name="name" id="name" placeholder="Họ và Tên"><br>
     <label for="email">Email:</label><br>
     <input type="email" name="email" id="email" placeholder="Email"><br>
-    <label for="phone">SDT:</label><br>
-    <input type="number" name="phone" id="phone" placeholder="SDT"><br>
-    <label for="gender">Gioi tinh:</label><br>
-    <input type="radio" name="gender">Nu 
+    <label for="phone">SĐT:</label><br>
+    <input type="number" name="phone" id="phone" placeholder="SĐT"><br>
+    <label for="gender">Giới tính:</label><br>
+    <input type="radio" name="gender">Nữ 
     <input type="radio" name="gender">Nam<br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Đăng ký">
   </form>
 </body>
 </html>
