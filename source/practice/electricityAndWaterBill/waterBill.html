@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Water Bill</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <a href="elctricityBill.html">Tính tiền điện</a>
+      <form>
+        <h1>Tiền nước</h1>
+        <h2>Nhập lựa chọn:</h2>
+
+        <div class="inputInfo first">
+          <div id="citySelect">
+            <h3>Chọn thành phố:</h3>
+
+            <input type="radio" name="city" id="HCMCity" />
+            <label for="HCMCity"> Thành phố HCM</label>
+            <input type="radio" name="city" id="HNCity" />
+            <label for="HNCity"> Hà Nội</label>
+          </div>
+
+          <div id="type">
+            <h3>Chọn phương thức:</h3>
+            <div class="typeSelect">
+              <section>
+                <input type="radio" name="type" id="1" />
+                <label for="1">Hộ gia đình</label><br>
+                <input type="radio" name="type" id="2" />
+                <label for="2">Hộ nghèo, cận nghèo</label><br>
+                <input type="radio" name="type" id="3" />
+                <label for="3">Đơn vị dịch vụ công</label>
+              </section>
+              <section>
+                <input type="radio" name="type" id="4" />
+                <label for="4">Cơ quan hành chính</label><br>
+                <input type="radio" name="type" id="5" />
+                <label for="5">Đơn vị sản xuất</label><br>
+                <input type="radio" name="type" id="6" />
+                <label for="6">Đơn vị kinh doanh dịch vụ</label>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <h2>Nhập các thông số:</h2>
+
+        <div class="inputInfo">
+          <div class="label">
+            <label for="lastElecUsed">Nhập số khối tháng trước:</label><br />
+            <label for="elecUsed">Nhập số khối tháng này:</label><br />
+            <label for="elecCount">Nhập tổng khối nước tiêu thụ:</label><br />
+            <label for="people">Nhập số người trong hộ gia đình:</label><br>
+            <label for="result">Tiền nước tháng này:</label>
+          </div>
+
+          <div class="input">
+            <input
+              type="text"
+              name="lastWaterUsed"
+              id="lastWaterUsed"
+              placeholder="Nhập số khối tháng trước"
+            />
+            <br />
+            <input
+              type="text"
+              name="waterUsed"
+              id="waterUsed"
+              placeholder="Nhập số khối tháng này"
+            />
+            <br />
+            <input
+              type="text"
+              name="waterCount"
+              id="waterCount"
+              placeholder="Nhập tổng số khối tiêu thụ"
+            /><br />
+            <input
+            type="text"
+            name="people"
+            id="people"
+            placeholder="Nhập số người trong hộ gia đình"
+            disabled
+            ><br>
+            <input
+              type="text"
+              name="result"
+              id="result"
+              placeholder="Tiền nước"
+              disabled
+            />
+          </div>
+        </div>
+
+        <input id="button" type="button" value="Tính toán" /><br />
+      </form>
+    </div>
+
+    <script src="water.js"></script>
+  </body>
+</html>

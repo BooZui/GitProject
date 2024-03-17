@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  position: relative;
+  margin-top: 8px;
+  padding: 20px;
+  left: 50%;
+  width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  transform: translate(-50%);
+}
+
+a {
+  display: block;
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: #43a5f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 20px;
+}
+
+.inputInfo {
+  display: flex;
+  padding: 20px;
+  margin: 20px 40px;
+  background: #ccc;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.inputInfo .label {
+  display: grid;
+  justify-content: space-between;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.inputInfo .input {
+  display: grid;
+  justify-content: space-between;
+}
+
+.inputInfo .input input {
+  padding: 0 4px;
+  height: 24px;
+  border: hidden;
+  background: #00000000;
+  border-bottom: 1px solid #aaa;
+}
+
+#button {
+  position: relative;
+  left: 50%;
+  width: 140px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #00f8;
+  transform: translate(-50%);
+}
+
+/* water */
+
+.inputInfo.first {
+  display: block;
+}
+
+#citySelect {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#citySelect input {
+  margin-right: -80px;
+}
+
+#type {
+  display: flex;
+  margin-top: 20px;
+}
+
+#type .typeSelect {
+  display: flex;
+  width: 400px;
+  margin-left: 64px;
+  justify-content: space-between;
+}

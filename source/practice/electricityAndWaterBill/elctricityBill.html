@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Electricity Bill</title>
+  </head>
+  <body>
+    <div id="main">
+      <a href="waterBill.html">Tính tiền nước</a>
+      <form>
+        <h1>Tiền điện</h1>
+        <h2>Nhập các thông số</h2>
+
+        <div class="inputInfo">
+          <div class="label">
+            <label for="lastElecUsed">Nhập số điện tháng trước:</label><br />
+            <label for="elecUsed">Nhập số điện tháng này:</label><br />
+            <label for="elecCount">Nhập tổng điện năng tiêu thụ:</label><br>
+            <label for="result">Tiền điện tháng này:</label>
+          </div>
+
+          <div class="input">
+            <input
+              type="text"
+              name="lastElecUsed"
+              id="lastElecUsed"
+              placeholder="Nhập số điện tháng trước"
+            />
+            <br />
+            <input
+              type="text"
+              name="elecUsed"
+              id="elecUsed"
+              placeholder="Nhập số điện tháng này"
+            />
+            <br />
+            <input
+              type="text"
+              name="elecCount"
+              id="elecCount"
+              placeholder="Nhập tổng số điện tiêu thụ"
+            /><br/>
+            <input
+            type="text"
+            name="result"
+            id="result"
+            placeholder="Tiền điện"
+            disabled
+            >
+          </div>
+        </div>
+
+        <input id="button" type="button" value="Tính toán" /><br>
+      </form>
+
+      <script src="electricity.js"></script>
+    </div>
+  </body>
+</html>
