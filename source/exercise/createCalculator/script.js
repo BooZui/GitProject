@@ -34,6 +34,9 @@ function handSymbol(buttonValue) {
 
     case "<":
       result = result.slice(0, -1);
+      if (result.length === 0) {
+        result = "0";
+      }
       display.innerHTML = result;
       break;
 
@@ -47,7 +50,8 @@ function handSymbol(buttonValue) {
 
     case "-":
       preOperator = parseFloat(result);
-      target -= preOperator;
+      if (operator) target -= preOperator;
+      else target = preOperator;
       result = "0";
       display.innerHTML = result;
       operator = "-";
