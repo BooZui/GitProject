@@ -154,6 +154,7 @@ results = results.split(',\n');
 
 const select = document.getElementById('from');
 const to = document.getElementById('to');
+const button = document.getElementById('result');
 
 results.forEach((element, index) => {
   let option = document.createElement('option');
@@ -166,11 +167,20 @@ results.forEach((element, index) => {
   to.appendChild(option2);
 })
 
-select.options[0].selected = true;
-
-let fromInput;
+let fromInput = 3.67179;
+let toInput = 3.67179;
+let amountText = '  AED';
 select.addEventListener('change', () => {
-  fromInput = select.value;
+  fromInput = select.value.substr(7);
 })
 
-console.log(fromInput)
+to.addEventListener('change', () => {
+  toInput = to.value.substr(7);
+  amountText = to.value.substr(0, 7)
+})
+
+button.addEventListener('click', () => {
+  let result = document.getElementById('amount').value / fromInput * toInput;
+  const div = document.querySelector('div');
+  div.innerHTML = result.toFixed(3) + amountText;
+})
