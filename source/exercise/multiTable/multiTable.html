@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Table</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30vh;
+      }
+
+      table {
+        display: block;
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+
+      td {
+        padding: 2px 5px;
+        border: 1px solid #000;
+      }
+    </style>
+
+    <div>
+      <h1 style="display: block">Bảng Cửu Chương</h1>
+      <h3><table></table></h3>
+    </div>
+
+    <script>
+      const table = document.querySelector("table");
+
+      for (let i = 2; i < 10; i++) {
+        const tr = document.createElement("tr");
+        for (let j = 1; j < 10; j++) {
+          const td = document.createElement("td");
+          td.textContent = `${i} x ${j} = ${i * j}`;
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>
