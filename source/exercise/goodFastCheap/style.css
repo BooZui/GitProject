@@ -1,0 +1,73 @@
+* {
+  font-family: fantasy;
+}
+
+.buttons {
+  display: flex;
+  width: 68px;
+  height: 24px;
+  background: #555;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  margin: 64px;
+  transition: all 0.8s ease-in-out;
+}
+
+.circle {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -4px;
+  left: 62px;
+  border-radius: 16px;
+  background: #ccc;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.green.active {
+  background: rgb(6, 220, 6);
+  box-shadow: 0 2px 2px #0007;
+}
+
+.red.active {
+  background: rgb(220, 6, 6);
+  box-shadow: 0 2px 2px #0007;
+}
+
+.blue.active {
+  background: rgb(6, 6, 220);
+  box-shadow: 0 2px 2px #0007;
+}
+
+.active {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -4px;
+  left: 104px;
+  border-radius: 16px;
+  background: #ccc;
+  border: 0;
+  cursor: pointer;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  left: 200px;
+}
+
+.green.active ~ .buttons {
+  background: rgb(6, 130, 6);;
+}
+
+.blue.active ~ .buttons {
+  background: rgb(6, 6, 130);;
+}
+
+.red.active ~ .buttons {
+  background: rgb(130, 6, 6);;
+}
