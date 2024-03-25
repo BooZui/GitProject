@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do You Love Me</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+    "
+  >
+    <div style="position: relative">
+      <div style="position: relative; z-index: 100;">
+        <h1>Do You Love Me</h1>
+     </div>
+      <div style="position: absolute; left: 50%; transform: translate(-50%);">
+        <a
+          style="
+            position: absolute;
+            right: 0;
+            margin-right: 2px;
+            width: 80px;
+            height: 40px;
+            font-weight: 600;
+            font-size: larger;
+            background: #f33;
+            border-radius: 8px;
+            cursor: pointer;
+          "
+          id="yes"
+          href="./yes.html"
+        >
+          <button style="width: 100%; font-weight: 600;
+          font-size: larger;
+          background: #f33;
+          border-radius: 8px;
+          cursor: pointer; height: 100%; font-size: 1em;">Yes</button>
+        </a>
+        <button
+          style="
+            position: absolute;
+            left: 0;
+            margin-left: 2px;
+            width: 80px;
+            height: 40px;
+            font-weight: 600;
+            font-size: larger;
+            background: #25a;
+            border-radius: 8px;
+          "
+          onmouseover="hover()"
+          id="no"
+        >
+          No
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
